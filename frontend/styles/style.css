@@ -1,0 +1,61 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 5rem;
+  border: 3px solid #2ea1e4;
+  border-radius: 5px;
+}
+
+.url-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1px;
+}
+
+.input-container {
+  width: auto;
+  padding: 1rem;
+}
+
+#url-input {
+  width: auto;
+  padding: 5px 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+#url-input:focus {
+  border-color: aqua;
+  outline: none;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+#submit-btn {
+    padding: 0.8rem;
+    border: none;
+    min-width: 50px;
+    margin-left: 8px;
+    background-color: #2ea1e4;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0.9;
+    border-radius: 4px;
+}
+
+#submit-btn:hover {
+    opacity: 1.4;
+}
+
+.short-container {
+  background-color: #65c0f5;
+  padding: 1rem;
+  width: auto;
+}
+
+#short-url:hover {
+    color: #be0000;
+}

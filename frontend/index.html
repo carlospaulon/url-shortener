@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Carlos's URL Shortener</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="url-title">URL Shortener</h1>
+      <div class="input-container">
+        <input type="text" placeholder="Enter the long url" required id="url-input" />
+        <button id="submit-btn">Enviar</button>
+      </div>
+
+      <div class="short-container">
+        <div class="short-text">
+          Short URL: <a href="" target="_blank" id="short-url"></a>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
