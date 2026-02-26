@@ -19,3 +19,17 @@ export async function createShortUrl(originalUrl) {
     console.error("Error on creating a short url:", error);
   }
 }
+
+// async function test() {
+//     console.log("Criando")
+//     const createData = await createShortUrl(
+//       "https://www.youtube.com/watch?v=AnGdzz-XWcE&list=RDAnGdzz-XWcE&start_radio=1",
+//     );
+//     console.log(createData.shortUrl);
+    
+//     const shortUrl = createData.shortUrl;
+//     const getData = await fetchShortUrl(shortUrl);
+//     console.log(getData)
+// }
+
+// test()

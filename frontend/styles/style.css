@@ -59,3 +59,12 @@
 #short-url:hover {
     color: #be0000;
 }
+
+li {
+  list-style: none;
+  border: 1px solid blue;
+  border-radius: 6px;
+  padding: 10px;
+  margin: 0.5rem;
+  background-color: #dff3ff;
+}
