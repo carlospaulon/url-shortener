@@ -9,10 +9,11 @@ export async function fetchShortUrl(shortUrl) {
   }
 }
 
-export async function createShortUrl(originalUrl) {
+export async function createShortUrl(originalUrl, shortUrl) {
   try {
     const response = await axios.post(`${BASE_URL}/api/shorten`, {
       originalUrl,
+      shortUrl
     });
     return response.data;
   } catch (error) {
@@ -20,16 +21,11 @@ export async function createShortUrl(originalUrl) {
   }
 }
 
-// async function test() {
-//     console.log("Criando")
-//     const createData = await createShortUrl(
-//       "https://www.youtube.com/watch?v=AnGdzz-XWcE&list=RDAnGdzz-XWcE&start_radio=1",
-//     );
-//     console.log(createData.shortUrl);
-    
-//     const shortUrl = createData.shortUrl;
-//     const getData = await fetchShortUrl(shortUrl);
-//     console.log(getData)
-// }
-
-// test()
+export async function checkShortUrl(shortUrl) {
+  try {
+    const response = await axios.get(`${BASE_URL}/api/check/${shortUrl}`);
+    return response.data
+  } catch (error) {
+    console.error("Error on checking the Short URL: ", error)
+  }
+}
